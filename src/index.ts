@@ -1,7 +1,7 @@
 /**
  * Attribute Util
  *
- * @version 2.0.0
+ * @version 2.0.1
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
@@ -143,10 +143,3 @@ export function saveAttributes(
     });
   });
 }
-
-// -----------------------------------------------------------------------------
-// Exports
-// -----------------------------------------------------------------------------
-
-export const addTokenToAttribute = addAttributeToken;
-export const removeTokenFromAttribute = removeAttributeToken;
