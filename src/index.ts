@@ -1,7 +1,7 @@
 /**
  * Attribute Util
  *
- * @version 2.0.1
+ * @version 2.0.2
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
@@ -19,11 +19,15 @@ export interface AttributeUtilOptions {
 }
 
 // -----------------------------------------------------------------------------
-// APIs
+// Constants
 // -----------------------------------------------------------------------------
 
 const DEFAULT_PARSER = (value: string): string[] => value.split(/\s+/);
 const DEFAULT_SERIALIZER = (tokens: string[]): string => tokens.join(' ');
+
+// -----------------------------------------------------------------------------
+// APIs
+// -----------------------------------------------------------------------------
 
 export function addAttributeToken(
   element: Element,
