@@ -1,7 +1,7 @@
 /**
  * Attribute Util
  *
- * @version 2.0.2
+ * @version 2.0.3
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
@@ -13,9 +13,9 @@
 // -----------------------------------------------------------------------------
 
 export interface AttributeUtilOptions {
-  readonly caseInsensitive?: boolean;
-  readonly parse?: (value: string) => string[];
-  readonly serialize?: (tokens: string[]) => string;
+  caseInsensitive: boolean;
+  parse: (value: string) => string[];
+  serialize: (tokens: string[]) => string;
 }
 
 // -----------------------------------------------------------------------------
@@ -33,7 +33,7 @@ export function addAttributeToken(
   element: Element,
   name: string,
   token: string,
-  options: AttributeUtilOptions = {},
+  options: Partial<AttributeUtilOptions> = {},
 ): void {
   const value = element.getAttribute(name)?.trim();
   const {
@@ -61,7 +61,7 @@ export function removeAttributeToken(
   element: Element,
   name: string,
   token: string,
-  options: AttributeUtilOptions = {},
+  options: Partial<AttributeUtilOptions> = {},
 ): void {
   const value = element.getAttribute(name)?.trim();
 
