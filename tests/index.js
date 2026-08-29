@@ -78,7 +78,7 @@ function saveAttributes(element_or_elements, name_or_names) {
 /**
  * Attribute Utils
  *
- * @version 2.0.4
+ * @version 2.0.5
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane

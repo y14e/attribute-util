@@ -1,7 +1,7 @@
 /**
  * Attribute Utils
  *
- * @version 2.0.4
+ * @version 2.0.5
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
