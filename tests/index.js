@@ -75,16 +75,14 @@ function saveAttributes(element_or_elements, name_or_names) {
     });
   });
 }
-var addTokenToAttribute = addAttributeToken;
-var removeTokenFromAttribute = removeAttributeToken;
 /**
- * Attributes Utils
+ * Attribute Utils
  *
- * @version 2.0.0
+ * @version 2.0.4
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
- * @see {@link https://github.com/y14e/attributes-utils}
+ * @see {@link https://github.com/y14e/attribute-utils}
  */
 
-export { addAttributeToken, addTokenToAttribute, removeAttributeToken, removeTokenFromAttribute, restoreAttributes, saveAttributes };
+export { addAttributeToken, removeAttributeToken, restoreAttributes, saveAttributes };

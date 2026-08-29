@@ -1,6 +1,6 @@
 {
-  "name": "@y14e/attribute-util",
-  "version": "2.0.3",
+  "name": "@y14e/attribute-utils",
+  "version": "2.0.4",
   "description": "",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -28,12 +28,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/y14e/attribute-util.git"
+    "url": "git+https://github.com/y14e/attribute-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/y14e/attribute-util/issues"
+    "url": "https://github.com/y14e/attribute-utils/issues"
   },
-  "homepage": "https://github.com/y14e/attribute-util#readme",
+  "homepage": "https://github.com/y14e/attribute-utils#readme",
   "devDependencies": {
     "bun-types": "latest",
     "tsup": "^8.0.0",

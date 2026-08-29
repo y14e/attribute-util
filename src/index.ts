@@ -1,18 +1,18 @@
 /**
- * Attribute Util
+ * Attribute Utils
  *
- * @version 2.0.3
+ * @version 2.0.4
  * @author Yusuke Kamiyamane
  * @license MIT
  * @copyright Copyright (c) Yusuke Kamiyamane
- * @see {@link https://github.com/y14e/attribute-util}
+ * @see {@link https://github.com/y14e/attribute-utils}
  */
 
 // -----------------------------------------------------------------------------
 // Types
 // -----------------------------------------------------------------------------
 
-export interface AttributeUtilOptions {
+export interface AttributeUtilsOptions {
   caseInsensitive: boolean;
   parse: (value: string) => string[];
   serialize: (tokens: string[]) => string;
@@ -33,7 +33,7 @@ export function addAttributeToken(
   element: Element,
   name: string,
   token: string,
-  options: Partial<AttributeUtilOptions> = {},
+  options: Partial<AttributeUtilsOptions> = {},
 ): void {
   const value = element.getAttribute(name)?.trim();
   const {
@@ -61,7 +61,7 @@ export function removeAttributeToken(
   element: Element,
   name: string,
   token: string,
-  options: Partial<AttributeUtilOptions> = {},
+  options: Partial<AttributeUtilsOptions> = {},
 ): void {
   const value = element.getAttribute(name)?.trim();
 
