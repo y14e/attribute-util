@@ -2,10 +2,18 @@
   "name": "@y14e/attribute-utils",
   "version": "2.0.5",
   "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/y14e/attribute-utils#readme",
+  "bugs": {
+    "url": "https://github.com/y14e/attribute-utils/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y14e/attribute-utils.git"
+  },
+  "license": "MIT",
+  "author": "Yusuke Kamiyamane",
   "type": "module",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -13,6 +21,9 @@
       "require": "./dist/index.cjs"
     }
   },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "LICENSE",
@@ -20,20 +31,9 @@
   ],
   "scripts": {
     "build": "tsup",
-    "prepublishOnly": "npm run build",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "Yusuke Kamiyamane",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/y14e/attribute-utils.git"
-  },
-  "bugs": {
-    "url": "https://github.com/y14e/attribute-utils/issues"
-  },
-  "homepage": "https://github.com/y14e/attribute-utils#readme",
   "devDependencies": {
     "bun-types": "latest",
     "tsup": "^8.0.0",
